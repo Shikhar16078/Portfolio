@@ -38,11 +38,30 @@ footer{
 }
 
 /* Home */
+.brand-text{
+    margin: 0; 
+    margin-top: 5px; 
+    color: #F7F7F7;
+}
 #Home{
     padding-top: 80px;
 }
+#Home > div > div{
+    margin: 2px;
+}
+
+.ct{
+    color: #4f1274;
+}
 
 /* Work Experience */
+#Experience{
+    padding-top: 70px;
+}
+.work{
+    margin: 15px;
+}
+
 .work-img-1 > img{
     border-radius: 10%;
     height: auto;
@@ -65,6 +84,10 @@ footer{
 
 .footer-svg{
     fill: #F7F7F7;
+}
+
+.footer-svg:hover{
+    fill: pink;
 }
 
 .color-magenta{
