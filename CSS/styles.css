@@ -1,0 +1,111 @@
+/* Google Fonts */
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bootstrap Overriding */
+
+/* Custom CSS */
+body{
+    background-color: #F7F7F7;
+}
+
+section{
+    padding-top: 50px;
+}
+
+footer{
+    background-color: #240A34;
+    color: white;
+}
+
+/* Home */
+#Home{
+    padding-top: 80px;
+}
+
+/* Work Experience */
+.work-img-1 > img{
+    border-radius: 10%;
+    height: auto;
+    width: 35%;
+    overflow: hidden;
+    float: right;
+    margin-left: 5%;
+}
+
+/* Education */
+.card-body{
+    background-color: #F7F7F7;
+    color: #240A34;
+    border-radius: 5px;
+}
+
+.footer-svg{
+    fill: #F7F7F7;
+}
+
+.color-magenta{
+    background-color: #240A34;
+}
+
+.color-maroon{
+    background-color: #891652;
+}
+
+.color-pale-yellow{
+    background-color: #EABE6C;
+}
+
+.color-bg{
+    background-color: #FFEDD8;
+}
+
+.pale-text{
+    color: #FFEDD8;
+}
+
+
+.navbar-nav .nav-link{
+    color: #FFEDD8;
+    font-size: 1.1rem;
+}
+
+.navbar-brand{
+    color: #FFEDD8;
+}
+
+.profile-photo{
+    border-radius: 50%;
+    height: auto;
+    width: 60%;
+}
+
+@media screen and (min-width:1024px) {
+    .navbar-nav .nav-item{
+        padding: 0 1 rem;
+    }
+}
+
+@media screen and (min-width:768) and (max-width:992) {
+    .profile-photo{
+        width: 500px;
+        height: auto;
+    }
+}
+
+
