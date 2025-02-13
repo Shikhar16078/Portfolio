@@ -1,57 +1,119 @@
-/* Google Fonts */
-.libre-baskerville-regular {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic;
+:root{
+    --primary-font: 'PT Serif', serif;
+    --secondary-font: 'Lato', serif;
+    --primary-color: #222831;
+    --secondary-color: #393E46;
+    --ternary-color: #00ADB5;
+    --base-color: #EEEEEE;
 }
 
 /* Bootstrap Overriding */
+.navbar{
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    background-color: var(--primary-color);
+}
+
+.navbar-nav .nav-link{
+    color: var(--base-color);
+    font-size: 1.1rem;
+}
+
+.navbar-brand{
+    color: var(--secondary-color);
+}
+
 a.nav-link:hover{
-    color: rgb(254, 156, 172);
+    color: var(--ternary-color);
     text-decoration: underline;
 }
 
+
 /* Custom CSS */
+html{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: #F7F7F7;
+    background-color: var(--background-color);
 }
 
 section{
-    padding-top: 50px;
+    padding-top: 0px;
 }
 
 footer{
-    background-color: #240A34;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--base-color);
 }
+
+#footer-text{
+    color: var(--base-color);
+    font-family: var(--primary-font);
+}
+
+/* Global */
+.c-p{
+    color: var(--primary-color);
+}
+.c-s{
+    color: var(--secondary-color);
+}
+.c-t{
+    color: var(--ternary-color);
+}
+.c-b{
+    color: var(--base-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--primary-font);
+}
+section > div > div.card.mb-4{
+    background-color: var(--primary-color);
+}
+
+section > div > div.card.mb-4 > h1{
+    color: var(--base-color);
+    margin-left: 20px;
+}
+p{
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+a{
+    font-family: var(--secondary-font);
+}
+
+/* Font Primary */
+/* .font-primary {
+    font-family: var(--primary-font);
+    color: var(--main-color);
+}
+
+.secondary-font{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+} */
+
 
 /* Home */
 .brand-text{
     margin: 0; 
     margin-top: 5px; 
-    color: #F7F7F7;
+    color: var(--base-color);
 }
 #Home{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 #Home > div > div{
     margin: 2px;
 }
 
 .ct{
-    color: #4f1274;
+    color: var(--primary-color);
 }
 
 /* Work Experience */
@@ -69,6 +131,9 @@ footer{
 }
 
 /* Education */
+#Education{
+    padding-top: 70px;
+}
 .card-body{
     background-color: #F7F7F7;
     color: #240A34;
@@ -84,40 +149,7 @@ footer{
 }
 
 .footer-svg:hover{
-    fill: pink;
-}
-
-.color-magenta{
-    background-color: #240A34;
-}
-
-.color-maroon{
-    background-color: #891652;
-}
-
-.color-pale-yellow{
-    background-color: #EABE6C;
-}
-
-.color-bg{
-    background-color: #FFEDD8;
-}
-
-.pale-text{
-    color: #FFEDD8;
-}
-
-.navbar{
-    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
-}
-
-.navbar-nav .nav-link{
-    color: #FFEDD8;
-    font-size: 1.1rem;
-}
-
-.navbar-brand{
-    color: #FFEDD8;
+    fill: var(--ternary-color);
 }
 
 .profile-photo{
@@ -127,11 +159,32 @@ footer{
     box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width:550px) {
+/* Skills */
+#Skills{
+    padding-top: 70px;
+}
+
+#Skills .card-header{
+    background-color: var(--ternary-color);
+}
+
+@media (max-width:576px) {
     #footer-text{
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 }
+
+@media (min-width:768px) {
+    #footer-text{
+        font-size:15px;
+    }
+}
+
+/* @media (max-width:990px) {
+    #footer-text{
+        font-size: 3vw;
+    }
+} */
 
 @media screen and (min-width:1024px) {
     .navbar-nav .nav-item{
@@ -145,5 +198,3 @@ footer{
         height: auto;
     }
 }
-
-
