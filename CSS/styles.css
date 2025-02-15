@@ -87,18 +87,6 @@ a{
     font-family: var(--secondary-font);
 }
 
-/* Font Primary */
-/* .font-primary {
-    font-family: var(--primary-font);
-    color: var(--main-color);
-}
-
-.secondary-font{
-    font-family: var(--secondary-font);
-    color: var(--secondary-color);
-} */
-
-
 /* Home */
 .brand-text{
     margin: 0; 
@@ -106,10 +94,7 @@ a{
     color: var(--base-color);
 }
 #Home{
-    padding-top: 50px;
-}
-#Home > div > div{
-    margin: 2px;
+    padding-top: 80px;
 }
 
 .ct{
