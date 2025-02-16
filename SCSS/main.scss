@@ -1,0 +1,22 @@
+// Custom Variables
+$primary: #222831;
+$secondary: #393E46;
+$ternary: #00ADB5;
+$base: #EEEEEE;
+$danger: $primary;
+
+// Import Functions and Variables Files
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors:(
+    "ternary": $ternary,
+    "secondary": $secondary,
+    "base": $base 
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// BoostStrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
